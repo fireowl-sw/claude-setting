@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "plugins": {
+    "ralph-wiggum@claude-code-plugins": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/fireowl",
+        "installPath": "/Users/fireowl/.claude/plugins/cache/claude-code-plugins/ralph-wiggum/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-18T03:26:34.487Z",
+        "lastUpdated": "2026-01-25T07:00:44.968Z",
+        "isLocal": true
+      }
+    ],
+    "everything-claude-code@everything-claude-code": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/fireowl",
+        "installPath": "/Users/fireowl/.claude/plugins/cache/everything-claude-code/everything-claude-code/unknown",
+        "version": "unknown",
+        "installedAt": "2026-01-25T07:01:10.943Z",
+        "lastUpdated": "2026-01-25T07:01:10.943Z",
+        "isLocal": true
+      }
+    ],
+    "obsidian-visual-skills@axton-obsidian-visual-skills": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/fireowl",
+        "installPath": "/Users/fireowl/.claude/plugins/cache/axton-obsidian-visual-skills/obsidian-visual-skills/f934f80c11fc",
+        "version": "f934f80c11fc",
+        "installedAt": "2026-01-25T07:01:26.518Z",
+        "lastUpdated": "2026-01-25T07:04:18.482Z",
+        "isLocal": true
+      }
+    ],
+    "glm-plan-usage@zai-coding-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/fireowl/.claude/plugins/cache/zai-coding-plugins/glm-plan-usage/0.0.1",
+        "version": "0.0.1",
+        "installedAt": "2026-03-06T08:47:00.900Z",
+        "lastUpdated": "2026-03-06T08:47:00.900Z",
+        "isLocal": true
+      }
+    ],
+    "glm-plan-bug@zai-coding-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/fireowl/.claude/plugins/cache/zai-coding-plugins/glm-plan-bug/0.0.1",
+        "version": "0.0.1",
+        "installedAt": "2026-03-06T08:47:06.935Z",
+        "lastUpdated": "2026-03-06T08:47:06.935Z",
+        "isLocal": true
+      }
+    ],
+    "webnovel-writer@webnovel-writer-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/fireowl/.claude/plugins/cache/webnovel-writer-marketplace/webnovel-writer/5.5.4",
+        "version": "5.5.4",
+        "installedAt": "2026-03-15T15:19:42.116Z",
+        "lastUpdated": "2026-03-15T15:19:42.116Z",
+        "isLocal": true
+      }
+    ],
+    "claude-hud@claude-hud": [
+      {
+        "scope": "project",
+        "installPath": "/Users/fireowl/.claude/plugins/cache/claude-hud/claude-hud/0.0.10",
+        "version": "0.0.10",
+        "installedAt": "2026-03-19T15:09:02.104Z",
+        "lastUpdated": "2026-03-19T15:09:02.104Z",
+        "isLocal": true,
+        "projectPath": "/Users/fireowl/Documents/a_ws_fireowl"
+      }
+    ]
+  }
+}

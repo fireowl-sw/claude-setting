@@ -1,0 +1,40 @@
+# EE520 Exam Conclusion
+[[Week2 2026-04-18 11.21.11.mp4]]
+[[5-02-c Intro to Motion Systems.pdf]]
+Q1（5-02-c）：给定实际案例
+1.设计 motion profile（motion mode + switching conditions）
+解题思路是思考题目给出应用案例的流程，比如2025 年的自动插针机。就是可以分为高速下降，低速搜寻到接触点，恒力插针，高速上升四个动作。那么模式有哪些。就需要知道。书中给的就是
+Velocity tracking system（Fan blower, traction transportation, pump, hard disk drives, tape transport）（风扇鼓风机，牵引运输，泵，硬盘驱动器，磁带传输）
+Point-to-point motion system（Pick and place machines, hard-disk arms, cargo transport crane）（选择和放置机器，硬盘臂，货物运输起重机。）
+Trajectory path tracking system（CNC lathe, plotter, air-craft navigation and control）（数控车床，绘图仪，飞机导航和控制）Vmax -> Vlow 
+Force and tension control（Testing load, yawn pulling system, metal sheet rolling system, robotics gripper）（测试负载，打哈欠拉动系统，金属板卷曲系统，机器人抓取器）
+Compliance control（Hybrid force-motion control in robotics. Testing device.）
+Vibration damping （Active suspension system in cars）
+有时候后还需要知道实际应用对应的是哪个模式来画图，
+通常就是速度，位置，力
+Vmax -> Velocity tracking mode
+Vmax-low -> Trajectory path tracking mode
+Vlow -> search target constant velocity / constant force
+Stop
+Back(Vlow-max -> Trajectory path tracking mode)
+location( point-to-point motion)
+
+
+2.画 block diagram，说明各 block 功能
+	这个图要知道，还要知道 block 的功能
+画方框图就要知道这六种。同时还要注意是几轴的，额外加上 motion planner 和 trajectory generator（几轴就输出几轴）
+Velocity tracking system
+Point-to-point motion system
+Trajectory path tracking system
+Force and tension control
+Compliance control
+Vibration damping
+
+Motion planner – Calculation of the best possible route 
+Trajectory generator – generate the co-ordinates of the actual path 
+Controller – control the mechanics to move according to command 
+Power electronics – provide electrical power the motors 
+Motion actuators – the actual force/torque producing component 
+Feedback sensors – monitor on the actual motion
+3.画 flow chart 解释动作流程
+4.列出/设计 sensor，解释反馈机制

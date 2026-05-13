@@ -1,0 +1,1 @@
+第一题来自于 5-02-c 。主要就是给一个实际案例然你设计 motion profile（motion mode 和 switching conditions），画 block diagram 的同时说出每个 block 的功能，画 flow chart 来解释案例的动作。列出或设计合适的 sensor，来解释案例的反馈

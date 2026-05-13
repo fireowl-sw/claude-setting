@@ -1,0 +1,104 @@
+---
+tags:
+  - obsidian
+  - 微信公众号
+  - 教程
+date: 2026-04-14
+---
+
+# Obsidian 发布微信公众号
+
+## Step 1：配置插件
+
+打开 Obsidian，按下 <kbd>Cmd</kbd> + <kbd>,</kbd> 打开设置，往下滑找到 ==WeChat Public Platform== 插件，填写 AppID 和 Secret。
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414105310206.png)
+
+---
+
+## Step 2：获取 AppID 和 Secret
+
+登录微信开发者平台：
+
+> [!tip] 开发者平台地址
+> https://developers.weixin.qq.com/platform
+
+找到对应的公众号：
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414105626568.png)
+
+> [!warning] 注意
+> AppSecret 在点击重置或生成后==务必自行保存==，离开页面后无法再次查看，只能重新生成。
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414105710102.png)
+
+---
+
+## Step 3：配置 IP 白名单
+
+打开网站 [https://tool.lu/ip/](https://tool.lu/ip/)，复制当前 IP 地址。
+
+> [!danger] 重要提醒
+> **每次更换网络环境**都需要重新获取 IP 并更新白名单，否则接口调用会失败。
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414110008538.png)
+
+将 IP 地址填入白名单：
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414110103644.png)
+
+---
+
+## Step 4：连接插件
+
+将 AppID 和 Secret 填入 Obsidian 的插件设置中：
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414110309007.png)
+
+点击 **Connect**，显示以下界面即表示连接成功：
+
+> [!success] 连接成功
+> ![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414110350795.png)
+
+---
+
+## Step 5：上传草稿
+
+按下 <kbd>Cmd</kbd> + <kbd>P</kbd> 打开命令面板，输入 `wechat`，选择**上传草稿**即可。
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414110509097.png)
+
+> [!abstract] 快速回顾
+> 1. 插件设置中填写 AppID / Secret
+> 2. 开发者平台获取凭证并配置 IP 白名单
+> 3. 点击 Connect 验证连接
+> 4. `Cmd + P` → 搜索 `wechat` → 上传草稿
+
+> [!tip] 封面图
+> 点击上传后会要求选择封面图，建议提前保存一些好看的图片到文件夹备用。
+> ![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414111814230.png)
+
+---
+
+## Step 6：管理与发布
+
+上传成功后，登录公众号内容管理页面即可查看已上传的草稿：
+
+> [!tip] 公众号管理后台
+> https://mp.weixin.qq.com/
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414111933417.png)
+
+在管理页面中可以编辑后==预览==或直接==发布==文章：
+
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414112013560.png)
+
+> [!abstract] 快速回顾
+> 1. 插件设置中填写 AppID / Secret
+> 2. 开发者平台获取凭证并配置 IP 白名单
+> 3. 点击 Connect 验证连接
+> 4. `Cmd + P` → 搜索 `wechat` → 上传草稿
+> 5. 公众号后台预览与发布
+
+我之前应该给你安装好了同步助手插件，在浏览器打开文章，点击同步助手，可以同步到不同平台的草稿箱。然后自己去后台修改发布就好了
+![image.png](https://raw.githubusercontent.com/fireowl-sw/figure/main/base/20260414112435809.png)

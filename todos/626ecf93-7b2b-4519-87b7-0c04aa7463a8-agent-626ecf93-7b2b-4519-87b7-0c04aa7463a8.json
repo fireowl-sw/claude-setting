@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Authenticate with GitHub CLI",
+    "status": "in_progress",
+    "activeForm": "Authenticating with GitHub CLI"
+  },
+  {
+    "content": "Initialize git repository",
+    "status": "pending",
+    "activeForm": "Initializing git repository"
+  },
+  {
+    "content": "Create GitHub repository",
+    "status": "pending",
+    "activeForm": "Creating GitHub repository"
+  },
+  {
+    "content": "Push project to GitHub",
+    "status": "pending",
+    "activeForm": "Pushing project to GitHub"
+  }
+]

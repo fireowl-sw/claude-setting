@@ -1,0 +1,236 @@
+---
+title: "EIE568 IoT Mini-Project Final Report"
+subtitle: "Plant Pal — AI Smart Plant Care System"
+course: EIE568
+type: final-report
+date: 2026-04-17
+status: draft
+tags: [report, mini-project, eie568, plant-pal, final-report]
+---
+
+# The Hong Kong Polytechnic University
+## Department of Electrical and Electronic Engineering
+
+**EIE568 IoT – Tools and Applications**
+
+**Mini-Project**
+
+*(Deadline: see the course information)*
+
+---
+
+# Final Report
+
+## General Information
+
+**Project title:** Plant Pal
+
+**Project team members:**
+
+| Student Name | Student ID Number |
+| :----------- | :---------------- |
+| Student A    |                   |
+| Student B    |                   |
+
+---
+
+## 1. Brief Introduction and Problem Definition
+
+Plant Pal is an IoT-based smart plant care system. It uses environmental sensors to collect real-time data and leverages AI to analyze the plant's growing conditions, then delivers care advice to the user through scheduled reports and voice interaction.
+
+We've all been there — you buy a plant, put it by the window, water it every now and then, and hope for the best. But the truth is, most of us have no idea whether the environment is actually good for the plant. Is it getting enough light? Is the soil too dry? Too wet? Plants don't show signs of stress until it's already too late, and by then you're left wondering what went wrong.
+
+That's exactly the problem Plant Pal sets out to solve. Instead of guessing, you get a system that watches the environment for you and tells you, in plain language, what your plant needs right now.
+
+---
+
+## 2. Motivation
+
+This project started from what we learned in Lab 3, where we built a basic IoT sensor node with Arduino and MQTT. That got us thinking — we can already collect environmental data, but just showing numbers on a screen isn't very useful to a real user. At the same time, AI is everywhere right now, especially large language models that can understand context and have natural conversations. So the idea was pretty straightforward: what if we bring the two together? Let the IoT side handle the sensing, and let AI handle the thinking and the interaction with the user. That combination is what makes Plant Pal more than just a sensor board — it becomes something you can actually talk to and get real advice from.
+
+---
+
+## 3. Achievable Objectives
+
+- Integrate DHT11, HW-390 soil moisture, and light sensors on an Arduino node.
+- Publish sensor readings via MQTT every 30 minutes.
+- Deploy OpenClaw cloud agent for automated plant health analysis.
+- Push scheduled care reports to Feishu every 6 hours via cron tasks.
+- Enable voice queries and camera analysis through xiaozhi ESP32.
+- Establish MCP-based communication between xiaozhi and OpenClaw.
+
+
+---
+
+## 4. Block Diagram of the Prototype Design
+
+```mermaid
+flowchart TD
+    subgraph SensorNode["Arduino Sensor Node"]
+        DHT["DHT11<br/>Temp & Humidity"]
+        SOIL["HW-390<br/>Soil Moisture"]
+        LIGHT["Light Sensor"]
+    end
+
+    MQTT["MQTT Broker"]
+
+    subgraph Cloud["OpenClaw Server"]
+        SCRIPT["MQTT Subscriber Script"]
+        OC["OpenClaw AI Agent<br/>+ Plant Care Knowledge Base"]
+        SCHED["Scheduled Tasks<br/>every 6h analysis"]
+    end
+
+    FEISHU["Feishu Chat"]
+
+    subgraph VoiceNode["xiaozhi ESP32<br/>Voice Agent"]
+        MIC["Microphone"]
+        CAM["Camera"]
+        SPK["Speaker"]
+    end
+
+    subgraph MCP["MCP Server Bridge"]
+        MCP_SRV["FastMCP Server"]
+    end
+
+    USER["User"]
+
+    DHT -->|"publish data"| MQTT
+    SOIL -->|"publish data"| MQTT
+    LIGHT -->|"publish data"| MQTT
+    MQTT -->|"subscribe"| SCRIPT
+    SCRIPT -->|"parse & store"| OC
+    SCHED -->|"trigger analysis"| OC
+    OC -->|"scheduled report"| FEISHU
+    FEISHU -->|"notification"| USER
+    USER -->|"voice query"| MIC
+    CAM -->|"plant image"| VoiceNode
+    VoiceNode -->|"MCP over WSS"| MCP_SRV
+    MCP_SRV -->|"chat/completions"| OC
+    OC -->|"care advice"| VoiceNode
+    SPK -->|"spoken response"| USER
+
+    style SensorNode fill:#f0f4f0,stroke:#5a7a5a,color:#2d3e2d
+    style Cloud fill:#f4f0f8,stroke:#6b5a8a,color:#3e2d5a
+    style VoiceNode fill:#f8f4f0,stroke:#8a6b4a,color:#5a3e2d
+    style MQTT fill:#f0f4f8,stroke:#4a6a8a,color:#2d4a5a
+    style FEISHU fill:#f0f0f8,stroke:#5a5a8a,color:#2d2d5a
+    style MCP fill:#f0f4f8,stroke:#4a6a8a,color:#2d4a5a
+    style USER fill:#f8f0f0,stroke:#8a5a5a,color:#5a2d2d
+```
+
+---
+
+## 5. List of Components Used and Their Purpose
+
+Arduino Sensor Node:
+
+Arduino-compatible board (ESP32-based) — Sensor node controller; reads data and publishes to MQTT via Wi-Fi.
+DHT11 Temperature & Humidity Sensor — Measures ambient temperature and humidity.
+HW-390 Capacitive Soil Moisture Sensor — Detects soil moisture level via ADC.
+Light Sensor — Measures ambient light intensity.
+
+xiaozhi Voice Agent:
+
+ESP32-S3-CAM Development Board — Voice agent with Wi-Fi, camera, I2S audio, and SPI display.
+OV3660 Camera Module — Captures plant images for AI visual analysis.
+INMP441 MEMS Digital Microphone — I2S microphone for voice input.
+MAX98357 I2S Audio Amplifier — Drives speaker with I2S-to-analog conversion.
+Speaker — Outputs spoken AI responses.
+1.54" IPS LCD Display (240x240, SPI) — Shows messages, sensor data, and system status.
+
+Cloud & Software:
+
+MQTT Broker (Mosquitto) — Publish/subscribe message broker.
+OpenClaw Agent — Cloud AI agent for data analysis and reporting.
+xiaozhi Agent Firmware — ESP32 voice agent with wake word, STT/TTS, MCP support.
+FastMCP Server — MCP bridge between xiaozhi and OpenClaw.
+
+---
+
+## 6. Flow Chart Indicating the Project Implementation
+
+```mermaid
+flowchart TD
+    START(["Start"]) --> PLAN["Define Objectives<br/>& Select Components"]
+    PLAN --> HW1["Arduino Sensor Node Setup<br/>DHT11 + HW-390 + Light Sensor"]
+    PLAN --> HW2["ESP32-xiaozhi Setup<br/>Camera + Mic + Speaker"]
+    HW1 --> MQTT["MQTT Publisher<br/>every 30 min"]
+    MQTT --> SUB["OpenClaw Subscriber<br/>Parse & Store Data"]
+    SUB --> SCHED["Scheduled Analysis<br/>every 6h"]
+    SCHED --> FEISHU["Push Report to Feishu"]
+    HW2 --> COMM["MCP Bridge Setup<br/>Webhook + WebSocket"]
+    COMM --> INTEG["System Integration"]
+    FEISHU --> INTEG
+    INTEG --> DEMO["Demo & Documentation"]
+    DEMO --> DONE(["Complete"])
+
+    style START fill:#66BB6A,stroke:#2E7D32,color:#fff
+    style DONE fill:#66BB6A,stroke:#2E7D32,color:#fff
+    style PLAN fill:#bbdefb,stroke:#1565c0,color:#0d47a1
+    style HW1 fill:#e8f5e9,stroke:#43a047,color:#1b5e20
+    style HW2 fill:#fff3e0,stroke:#fb8c00,color:#e65100
+    style INTEG fill:#f3e5f5,stroke:#8e24aa,color:#4a148c
+    style DEMO fill:#fce4ec,stroke:#e53935,color:#b71c1c
+```
+
+---
+
+## 7. Challenges / Difficulties Encountered in the Project
+
+1. Sensor calibration — The DHT11 has a warm-up delay, and the soil moisture ADC readings fluctuate. We solved this with multi-sample averaging and an analog-to-moisture mapping table.
+
+2. Cross-platform integration — The project spans Arduino (C++), xiaozhi (firmware), and OpenClaw (cloud). We standardized on JSON format and kept each module independent.
+
+3. AI prompt engineering — Getting the AI to combine raw sensor data with plant care knowledge took several rounds of iterative prompt tuning with domain-specific context.
+
+4. Arduino serial dependency — Serial.begin() would block the program if no USB connection was present. We added a timeout mechanism to skip serial init and proceed directly to MQTT.
+
+---
+
+## 8. Prototype Demonstration
+
+<!-- Replace with actual image embeds: ![[photo.jpg|500]] -->
+
+*Demo sequence:*
+
+1. Arduino sensor node collects & publishes data via MQTT.
+2. OpenClaw sends scheduled Feishu report with care recommendations.
+3. Feishu cloud document updates with latest readings and AI analysis.
+4. Voice interaction: user asks plant status, receives spoken advice from xiaozhi.
+
+> [!warning] Video
+> A video demonstration (< 5 MB) is attached as a separate file.
+
+---
+
+## 9. Results, Conclusion & Scope of Future Work
+
+Results
+
+All three core functions were successfully demonstrated. Here is a sample sensor reading captured during testing:
+
+Temperature: 23.4°C — 2026-04-07 21:13:10
+Humidity: 70% — 2026-04-07 21:13:10
+Soil Moisture: 44.1% — 2026-04-07 21:13:10
+Light: 74.41% — 2026-04-07 21:13:10
+
+The system also supports voice queries such as:
+
+"What is the latest plant status data?"
+"What suggestions do you have?"
+"Can you take a picture and analyze the plant?"
+
+Conclusion
+Plant Pal successfully validates the integration of IoT sensing, cloud AI, and voice interaction. MQTT provides reliable, lightweight sensor data transmission. Cloud AI agents deliver meaningful health assessments from the collected data. Voice interfaces make plant care accessible and intuitive — you just ask and get an answer. The modular JSON-based architecture also makes it easy to integrate different platforms together.
+
+Scope of Future Work
+Voice-controlled watering — Add a relay and water pump so that voice commands can trigger AI-verified watering.
+Multi-plant fleet — Support multiple sensor nodes with per-plant care profiles and grouped reports.
+Web dashboard — Real-time charts, health timeline, and trend analysis in a browser.
+Anomaly alerts — Instant push notifications when environmental conditions change critically.
+
+---
+
+> [!important] Important Note
+> - A **video demonstration** (< 5 MB) is attached as a **separate file**.
+> - The Arduino sketch/program is **not** included, as per requirements.

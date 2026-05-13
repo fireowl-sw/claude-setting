@@ -1,0 +1,160 @@
+{
+  "effortLevel": "high",
+  "enabledPlugins": {
+    "everything-claude-code@everything-claude-code": true,
+    "glm-plan-bug@zai-coding-plugins": true,
+    "glm-plan-usage@zai-coding-plugins": true,
+    "obsidian-visual-skills@axton-obsidian-visual-skills": true,
+    "ralph-wiggum@claude-code-plugins": true,
+    "webnovel-writer@webnovel-writer-marketplace": true
+  },
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "410db5a35e304f99a978f5e610f1831a.q5ZIsaUxzLSjt5fm",
+    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "GLM-4.5-air",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "GLM-5.1",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "GLM-5.1",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "1"
+  },
+  "extraKnownMarketplaces": {
+    "everything-claude-code": {
+      "source": {
+        "repo": "affaan-m/everything-claude-code",
+        "source": "github"
+      }
+    }
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "timeout": 86400,
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "/Users/fireowl/.vibe-island/bin/vibe-island-bridge --source claude",
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "opus[1m]",
+  "permissions": {
+    "allow": [
+      "mcp__zread__read_file",
+      "Bash(npx tsc:*)",
+      "Bash(npm install:*)",
+      "mcp__pencil"
+    ]
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "statusLine": {
+    "command": "bash -c 'plugin_dir=$(ls -d \"$HOME\"/.claude/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null | awk -F/ '\"'\"'{ print $(NF-1) \"\\t\" $0 }'\"'\"' | sort -t. -k1,1n -k2,2n -k3,3n -k4,4n | tail -1 | cut -f2-); exec \"/opt/homebrew/bin/bun\" \"${plugin_dir}src/index.ts\"'",
+    "type": "command"
+  }
+}

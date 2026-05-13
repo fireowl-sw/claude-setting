@@ -1,0 +1,42 @@
+model_provider = "glm"
+model = "zai/glm-5.1"
+personality = "pragmatic"
+model_reasoning_effort = "medium"
+
+[model_providers.glm]
+name = "zai"
+base_url = "https://open.bigmodel.cn/api/paas/v4"
+env_key = "GLM_API_KEY"
+
+[projects."/Users/fireowl"]
+trust_level = "trusted"
+
+[projects."/Users/fireowl/Documents/Codex/2026-04-18-new-chat"]
+trust_level = "trusted"
+
+[projects."/Users/fireowl/Documents/Codex/2026-04-18-nh"]
+trust_level = "trusted"
+
+[projects."/Users/fireowl/Documents/Codex/2026-04-18-nh-2"]
+trust_level = "trusted"
+
+[projects."/Users/fireowl/Documents/Codex/2026-04-18-new-chat-2"]
+trust_level = "trusted"
+
+[projects."/Users/fireowl/Documents/Codex/2026-04-18-new-chat-3"]
+trust_level = "trusted"
+
+[mcp_servers.pencil]
+command = "/Users/fireowl/.trae/extensions/highagency.pencildev-0.6.32-universal/out/mcp-server-darwin-arm64"
+args = [ "--app", "trae" ]
+
+[tui]
+terminal_title = []
+
+[features]
+codex_hooks = true
+
+[marketplaces.openai-bundled]
+last_updated = "2026-04-18T09:01:12Z"
+source_type = "local"
+source = "/Users/fireowl/.codex/.tmp/bundled-marketplaces/openai-bundled"

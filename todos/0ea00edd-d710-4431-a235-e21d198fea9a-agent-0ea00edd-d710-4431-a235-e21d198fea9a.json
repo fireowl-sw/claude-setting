@@ -1,0 +1,47 @@
+[
+  {
+    "content": "Step 0: 预检与上下文加载",
+    "status": "completed",
+    "activeForm": "正在进行 Step 0: 预检与上下文加载"
+  },
+  {
+    "content": "Step 1: 故事核与商业定位",
+    "status": "completed",
+    "activeForm": "正在进行 Step 1: 故事核与商业定位"
+  },
+  {
+    "content": "Step 2: 角色骨架与关系冲突",
+    "status": "completed",
+    "activeForm": "正在进行 Step 2: 角色骨架与关系冲突"
+  },
+  {
+    "content": "Step 3: 金手指与兑现机制",
+    "status": "completed",
+    "activeForm": "正在进行 Step 3: 金手指与兑现机制"
+  },
+  {
+    "content": "Step 4: 世界观与力量规则",
+    "status": "completed",
+    "activeForm": "正在进行 Step 4: 世界观与力量规则"
+  },
+  {
+    "content": "Step 5: 创意约束包",
+    "status": "completed",
+    "activeForm": "正在进行 Step 5: 创意约束包"
+  },
+  {
+    "content": "Step 6: 一致性复述与最终确认",
+    "status": "completed",
+    "activeForm": "正在进行 Step 6: 一致性复述与最终确认"
+  },
+  {
+    "content": "执行初始化脚本生成项目文件",
+    "status": "completed",
+    "activeForm": "正在执行初始化脚本生成项目文件"
+  },
+  {
+    "content": "验证与交付",
+    "status": "in_progress",
+    "activeForm": "正在进行验证与交付"
+  }
+]

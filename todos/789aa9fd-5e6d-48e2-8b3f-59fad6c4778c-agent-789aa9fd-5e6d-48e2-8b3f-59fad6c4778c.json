@@ -1,0 +1,32 @@
+[
+  {
+    "content": "创建发现(首页)界面 - 推荐歌单、热门歌曲",
+    "status": "in_progress",
+    "activeForm": "创建发现(首页)界面"
+  },
+  {
+    "content": "创建我的音乐界面 - 收藏的歌曲和歌单",
+    "status": "pending",
+    "activeForm": "创建我的音乐界面"
+  },
+  {
+    "content": "创建搜索界面",
+    "status": "pending",
+    "activeForm": "创建搜索界面"
+  },
+  {
+    "content": "创建正在播放界面 - 播放器控制",
+    "status": "pending",
+    "activeForm": "创建正在播放界面"
+  },
+  {
+    "content": "创建个人中心界面",
+    "status": "pending",
+    "activeForm": "创建个人中心界面"
+  },
+  {
+    "content": "验证所有界面设计",
+    "status": "pending",
+    "activeForm": "验证所有界面设计"
+  }
+]

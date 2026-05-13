@@ -1,0 +1,50 @@
+---
+created: 2026-04-19
+updated: 2026-04-19
+---
+
+# Resume Toolkit
+
+## 文件夹结构
+
+```
+Resume/
+├── README.md                    ← 你在这里
+├── Master Resume CN.md          ← 中文主简历（完整版，持续维护）
+├── Master Resume EN.md          ← 英文主简历（完整版，持续维护）
+├── Achievement Log/             ← 成就日志（按时间记录）
+│   ├── README.md                ← 成就日志使用说明
+│   └── 2026 Q2.md              ← 按季度记录的成就
+└── Tailored/                    ← 定制版简历（投递时从主简历裁剪）
+```
+
+## 使用方法
+
+### 日常维护
+
+1. **成就日志** → 有新成就随时记录到 `Achievement Log/` 对应季度文件
+2. **主简历更新** → 定期（建议每月）将成就日志中的亮点同步到主简历
+
+### 投递简历
+
+1. 打开对应的 `Master Resume CN.md` 或 `Master Resume EN.md`
+2. 根据目标岗位，**删减**不相关的内容
+3. **另存**到 `Tailored/` 文件夹，命名格式：`公司名-职位-日期`
+4. 在 frontmatter 中记录投递状态
+
+### 主简历原则
+
+> **主简历是全集，投递简历是子集。**
+
+- 主简历包含所有经历、技能、成就（不怕长）
+- 投递时只做减法，不做加法
+- 每条经历用 **STAR 法则**（Situation-Task-Action-Result）描述
+- 量化成果（数字 > 形容词）
+
+## 快速入口
+
+| 文件 | 用途 |
+|------|------|
+| [[Master Resume CN]] | 中文主简历 |
+| [[Master Resume EN]] | 英文主简历 |
+| [[Achievement Log/README]] | 成就日志指南 |

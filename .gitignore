@@ -1,0 +1,47 @@
+# ===== Secrets & Credentials (CRITICAL) =====
+settings.json
+settings.json.backup*
+mcp-configs/mcp-servers.json
+statsig/
+
+# ===== Session & Runtime Data =====
+sessions/
+session-data/
+projects/
+homunculus/
+
+# ===== Debug & Logs =====
+debug/
+metrics/
+cost-tracker.log
+bash-commands.log
+history.jsonl
+
+# ===== IDE Locks =====
+ide/
+
+# ===== Backups =====
+backups/
+
+# ===== Downloads & Temp =====
+downloads/
+temp/
+
+# ===== Stats Cache =====
+stats-cache.json
+.last-cleanup
+
+# ===== Node (plugins/marketplace) =====
+node_modules/
+package-lock.json
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+uv.lock
+
+# ===== OS =====
+.DS_Store

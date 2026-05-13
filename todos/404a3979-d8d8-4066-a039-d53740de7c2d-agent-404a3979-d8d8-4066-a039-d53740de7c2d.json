@@ -1,0 +1,52 @@
+[
+  {
+    "content": "Analyze the reference image to understand the UI design",
+    "status": "completed",
+    "activeForm": "Analyzing the reference image"
+  },
+  {
+    "content": "Set up Vite + React + TypeScript project",
+    "status": "completed",
+    "activeForm": "Setting up project"
+  },
+  {
+    "content": "Install and configure Tailwind CSS",
+    "status": "completed",
+    "activeForm": "Installing Tailwind CSS"
+  },
+  {
+    "content": "Create weather data service for OpenWeatherMap API",
+    "status": "completed",
+    "activeForm": "Creating weather service"
+  },
+  {
+    "content": "Implement current weather display component",
+    "status": "in_progress",
+    "activeForm": "Implementing current weather"
+  },
+  {
+    "content": "Implement weather forecast component",
+    "status": "pending",
+    "activeForm": "Implementing forecast"
+  },
+  {
+    "content": "Add city search functionality",
+    "status": "pending",
+    "activeForm": "Adding city search"
+  },
+  {
+    "content": "Implement geolocation for auto-detect location",
+    "status": "pending",
+    "activeForm": "Implementing geolocation"
+  },
+  {
+    "content": "Add favorite cities feature with LocalStorage",
+    "status": "pending",
+    "activeForm": "Adding favorites feature"
+  },
+  {
+    "content": "Style the complete UI",
+    "status": "pending",
+    "activeForm": "Styling the UI"
+  }
+]

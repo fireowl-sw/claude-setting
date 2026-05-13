@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"worldview-group","type":"group","x":0,"y":0,"width":400,"height":350,"label":"🌍 世界观设定","color":"5"},
+		{"id":"worldview-content","type":"text","x":20,"y":50,"width":360,"height":280,"text":"## 📖 时代背景\n\n- 时代：\n- 地理：\n- 社会：\n\n## ⚔️ 力量体系\n\n- 等级划分：\n- 战斗方式：\n- 限制条件：\n\n## 🏛️ 势力格局\n\n- 主导势力：\n- 对立势力：\n- 中立势力：","color":"5"},
+		{"id":"characters-group","type":"group","x":450,"y":0,"width":500,"height":350,"label":"👥 主要人物","color":"6"},
+		{"id":"protagonist","type":"text","x":470,"y":50,"width":220,"height":130,"text":"## 主角\n\n**姓名**：\n**性格**：\n**目标**：\n**金手指**：\n**成长线**：","color":"1"},
+		{"id":"ally","type":"text","x":710,"y":50,"width":220,"height":130,"text":"## 伙伴\n\n**姓名**：\n**性格**：\n**关系**：\n**作用**：","color":"4"},
+		{"id":"antagonist","type":"text","x":470,"y":200,"width":220,"height":130,"text":"## 反派\n\n**姓名**：\n**动机**：\n**势力**：\n**威胁等级**：","color":"2"},
+		{"id":"supporting","type":"text","x":710,"y":200,"width":220,"height":130,"text":"## 配角\n\n- 角色1：\n- 角色2：\n- 角色3：","color":"3"},
+		{"id":"plot-group","type":"group","x":0,"y":400,"width":950,"height":400,"label":"📚 主线剧情","color":"4"},
+		{"id":"volume1","type":"text","x":20,"y":450,"width":280,"height":150,"text":"## 第一卷：\n\n**核心冲突**：\n**开篇事件**：\n**发展**：\n**高潮**：\n**结局**：\n\n**进度**：⬜ 0%","color":"1"},
+		{"id":"volume2","type":"text","x":330,"y":450,"width":280,"height":150,"text":"## 第二卷：\n\n**核心冲突**：\n**开篇事件**：\n**发展**：\n**高潮**：\n**结局**：\n\n**进度**：⬜ 0%","color":"2"},
+		{"id":"volume3","type":"text","x":640,"y":450,"width":280,"height":150,"text":"## 第三卷：\n\n**核心冲突**：\n**开篇事件**：\n**发展**：\n**高潮**：\n**结局**：\n\n**进度**：⬜ 0%","color":"3"},
+		{"id":"timeline","type":"text","x":20,"y":620,"width":900,"height":160,"text":"## ⏳ 时间线\n\n| 时间 | 事件 | 影响 | 状态 |\n|------|------|------|------|\n|      |      |      |      |\n|      |      |      |      |\n|      |      |      |      |\n\n## 🎯 主线目标\n\n- 终极目标：\n- 中期目标：\n- 短期目标：","color":"5"},
+		{"id":"style-notes","type":"text","x":0,"y":850,"width":450,"height":150,"text":"## 🎨 风格定位\n\n**参考作品**：\n**叙事视角**：\n**节奏风格**：\n**文风特点**：\n**特色元素**：","color":"6"},
+		{"id":"constraints","type":"text","x":500,"y":850,"width":450,"height":150,"text":"## ⚠️ 一致性约束\n\n**人物不能**：\n**世界观不能**：\n**剧情不能**：\n**必须遵守**：","color":"1"}
+	],
+	"edges":[
+		{"id":"edge-1","fromNode":"protagonist","fromSide":"right","toNode":"ally","toSide":"left","label":"伙伴","color":"4"},
+		{"id":"edge-2","fromNode":"protagonist","fromSide":"bottom","toNode":"antagonist","toSide":"top","label":"对立","color":"1"},
+		{"id":"edge-3","fromNode":"worldview-group","fromSide":"bottom","toNode":"plot-group","toSide":"top","label":"背景设定","color":"5"},
+		{"id":"edge-4","fromNode":"characters-group","fromSide":"bottom","toNode":"plot-group","toSide":"top","label":"人物驱动","color":"6"},
+		{"id":"edge-5","fromNode":"volume1","fromSide":"right","toNode":"volume2","toSide":"left","label":"承接","color":"4"},
+		{"id":"edge-6","fromNode":"volume2","fromSide":"right","toNode":"volume3","toSide":"left","label":"承接","color":"4"}
+	]
+}

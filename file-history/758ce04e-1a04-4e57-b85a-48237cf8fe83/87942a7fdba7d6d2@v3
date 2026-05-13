@@ -1,0 +1,182 @@
+---
+type: master-resume
+lang: en
+created: 2026-04-19
+updated: 2026-04-19
+status: active
+---
+
+# Master Resume (English)
+
+> 💡 This is your comprehensive resume master copy. Tailor it for each application by removing irrelevant sections — never add new content during tailoring.
+> Use the **STAR method** for each bullet: Situation → Task → Action → **Result (quantified)**.
+
+---
+
+## Contact Information
+
+| Field | Details |
+|-------|---------|
+| Name | Bo Wu (吴波) |
+| Gender | Male |
+| Age | 24 |
+| Phone | +86 15116258418 |
+| Email | fireowlsw@outlook.com |
+| Location | Shenzhen, China |
+| LinkedIn |  |
+| GitHub |  |
+| Portfolio |  |
+
+---
+
+## Objective
+
+Autonomous Driving / Robotics Simulation Engineer
+
+---
+
+## Professional Summary
+
+Master's student at The Hong Kong Polytechnic University (QS 54) with a B.Eng. in Automation. Experienced in building ROS2 + Gazebo autonomous driving simulation platforms with full-stack integration of sensor fusion, path planning, and motion control. Previously developed production-grade embedded systems for industrial instrumentation with STM32, delivering end-to-end solutions from algorithm design to hardware deployment.
+
+---
+
+## Work Experience
+
+### Changsha Kadunhaiker Instruments Co., Ltd. — Embedded Software Developer
+
+`Sep 2023 - Mar 2024 | Changsha, China`
+
+**About the Company**: R&D and manufacturing company specializing in petroleum product testing instruments.
+
+**Key Responsibilities**:
+- Developed firmware for fully automatic kinematic viscosity determinator
+- Participated in testing and validation of 10+ petroleum testing instruments (grease densitometer, automatic folding tube viscometer, etc.)
+
+**Key Achievements**:
+- **Automatic Kinematic Viscosity Determinator**: Developed STM32-based firmware implementing PID temperature control (±0.02℃), photosensitive signal processing (external interrupt + timer, accuracy ±0.01s), data fitting algorithm (measurement range 0.5–3000 mm²/s, accuracy ≤1%), cleaning sequence control (GPIO-driven air pump/solenoid valve), Flash data storage (1000 test records), and LCD interaction (UART), meeting ASTM D445 standard
+
+**Tech Stack**: `STM32` `C` `PID Control` `UART` `GPIO` `Flash`
+
+---
+
+## Key Projects
+
+### ROS2 + Gazebo Mobile Robot Autonomous Driving Simulation System
+
+- **Role**: Sole Developer
+- **Summary**: Built a complete autonomous driving simulation platform covering simulation, mapping, planning, and control layers
+- **Tech Stack**: `ROS2` `Gazebo` `Python` `C++` `URDF/Xacro`
+- **Highlights**:
+  - **Simulation Layer**: Built differential-drive robot model with multi-sensor fusion (LiDAR, IMU, depth camera), configured 3D simulation scenes generating high-fidelity sensor data
+  - **Mapping Layer**: Implemented height filtering (0.1–1.0m) for ground noise removal, 3-layer circular inflation strategy (radius 0.2m) for 2D occupancy grid maps (resolution 0.1m), with dynamic obstacle detection and real-time map updates
+  - **Planning Layer**: Integrated A* global path planning, B-spline path smoothing, and Pure Pursuit path tracking with adaptive speed control (0.6–1.5m/s), achieving endpoint error ≤0.2m
+  - **Control Architecture**: Implemented control loop via ros2_control framework with diff_drive_controller, supporting migration to physical hardware
+
+---
+
+### Electromagnetic Off-Road Smart Car Control System (Smart Car Competition)
+
+`Mar 2021 - Jul 2021`
+
+- **Role**: Control Algorithm Lead
+- **Summary**: Developed control system for off-road smart car based on 4-channel electromagnetic sensors
+- **Tech Stack**: `C` `PID` `Embedded`
+- **Highlights**:
+  - Designed differential-ratio-sum deviation algorithm for track feature extraction, enabling auto-recognition of straight/normal/curved track segments
+  - Developed segmented PID control strategy with automatic parameter switching for 6 track states, supporting 4 parameter schemes via DIP switch
+  - Integrated 10ms-period control loop (PWM servo + dual-motor drive + ADC sampling), speed control error <5%
+
+---
+
+### Three-Phase AC-DC Conversion System (National Electronics Design Contest)
+
+`Nov 2021`
+
+- **Role**: Control Program Lead
+- **Summary**: Designed and implemented dual-loop PID control for three-phase AC-DC converter
+- **Tech Stack**: `C` `PID` `Power Electronics`
+- **Highlights**:
+  - Implemented dual-loop PID (voltage outer loop + current inner loop), stabilizing output at 36V±0.1V
+  - Tuned parameters to meet load regulation <0.3%, voltage regulation ≤0.3%, system efficiency ≥85%
+
+---
+
+## Education
+
+### The Hong Kong Polytechnic University (QS 54) — MSc — Electric Vehicle
+
+`Sep 2025 - Mar 2027`
+
+- Key Courses: Electric Vehicles (B+), EV Energy Storage & Renewable Energy (A-), Maintenance & Reliability Engineering (A-), Green Tech & Policy in EE (A)
+
+### Hunan University of Technology — BEng — Automation
+
+`Sep 2019 - Jun 2023`
+
+- GPA: 3.61/5.0 (86.1/100)
+- Key Courses: Modern Control Engineering, Signal Detection & Processing, Motor Drive Technology, Power Electronics, Analog/Digital Electronics
+
+---
+
+## Technical Skills
+
+### Programming Languages
+`Python` `C/C++` `MATLAB/Simulink`
+
+### Simulation & Robotics
+`ROS2` `Gazebo` `Rviz` `Rqt` `URDF/Xacro`
+
+### Algorithms & Control
+`A*` `B-spline Smoothing` `Pure Pursuit` `PID Control`
+
+### Embedded & Hardware
+`STM32` `PWM` `ADC` `GPIO` `UART` `Flash`
+
+### Development Tools
+`Linux (Ubuntu)` `Git` `Docker`
+
+---
+
+## Certifications
+
+| Certification | Issuer | Date |
+|---------------|--------|------|
+| IELTS 6.0 (Reading 7.0) | British Council |  |
+| NCRE Level 2 (C Language) | NCRE |  |
+| Mandarin Proficiency Test (Grade 2-A) |  |  |
+
+---
+
+## Languages
+
+| Language | Proficiency |
+|----------|-------------|
+| Chinese (Mandarin) | Native |
+| English | IELTS 6.0 (Reading 7.0) |
+
+---
+
+## Honors & Awards
+
+| Award | Issuer | Date |
+|-------|--------|------|
+| Outstanding Graduate | Hunan University of Technology | 2023 |
+| 2nd Prize, University Math Competition | Hunan University of Technology | 2022 |
+| 3rd Prize, National Electronics Design Contest | National Organizing Committee | 2021 |
+| 3rd Prize, Hunan Robotics & Smart Vehicle Competition | Hunan Province | 2021 |
+| 2nd Class University Scholarship | Hunan University of Technology | 2021 |
+| 3rd Class University Scholarship | Hunan University of Technology | 2020 |
+
+---
+
+## Additional
+
+### Talks & Presentations
+-
+
+### Open Source Contributions
+-
+
+### Volunteer Work
+-

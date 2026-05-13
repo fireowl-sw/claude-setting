@@ -1,0 +1,75 @@
+---
+type: master-resume
+lang: en
+created: 2026-04-19
+updated: 2026-04-19
+status: active
+---
+
+# Bo Wu (吴波)
+
+Phone: +86 15116258418 | Email: fireowlsw@outlook.com
+Gender: Male | Age: 24 | Location: Shenzhen | Target: Autonomous Driving / Robotics Simulation
+
+---
+
+## Education
+
+**Sep 2025 – Mar 2027**　MSc in Electric Vehicle　**The Hong Kong Polytechnic University** (QS 54)
+Key Courses: Electric Vehicles (B+), EV Energy Storage & Renewable Energy (A-), Maintenance & Reliability Engineering (A-), Green Tech & Policy in EE (A)
+
+**Sep 2019 – Jun 2023**　BEng in Automation　**Hunan University of Technology**
+GPA: 3.61/5.0 (86.1/100)
+Key Courses: Modern Control Engineering, Signal Detection & Processing, Motor Drive Technology, Power Electronics, Analog/Digital Electronics
+Awards: Outstanding Graduate (2023); 2nd Prize University Math Competition (2022); 3rd Prize National Electronics Design Contest (2021); 3rd Prize Hunan Robotics & Smart Vehicle Competition (2021); 2nd Class Scholarship (2021); 3rd Class Scholarship (2020)
+Certifications: IELTS 6.0 (Reading 7.0); NCRE Level 2 (C Language); Mandarin Proficiency Grade 2-A
+
+---
+
+## Core Simulation Project
+
+### ROS2 + Gazebo Mobile Robot Autonomous Driving Simulation System
+
+- **Simulation Layer**: Built autonomous driving simulation platform using ROS2 + Gazebo, constructed differential-drive robot model with multi-sensor fusion (LiDAR, IMU, depth camera), configured 3D simulation scenes generating high-fidelity sensor data for multi-modal perception and algorithm validation.
+- **Mapping Layer**: Implemented height filtering (0.1–1.0m) for ground noise removal, 3-layer circular inflation strategy (radius 0.2m) for 2D occupancy grid maps (resolution 0.1m), supporting dynamic obstacle detection and real-time map updates.
+- **Planning Layer**: Integrated A* global path planning, B-spline path smoothing, and Pure Pursuit path tracking with adaptive speed control (0.6–1.5m/s), achieving stable goal-reaching with endpoint error ≤0.2m.
+- **Control Architecture**: Implemented control loop via ros2_control framework with diff_drive_controller, supporting migration to physical hardware.
+
+---
+
+### Technical Stack
+
+- **Languages**: Python (ROS2 node development, simulation scripts, PyTorch), C/C++ (ROS2, embedded control), MATLAB/Simulink
+- **Simulation**: Gazebo (scene setup, dynamics modeling, sensor simulation), Rviz, Rqt, URDF/Xacro
+- **Planning & Control**: A*, B-spline path smoothing, Pure Pursuit
+- **Dev Environment**: Linux (Ubuntu), Git, Docker
+
+---
+
+## Competition Experience
+
+### Electromagnetic Off-Road Smart Car Control System (Smart Car Competition) — Control Algorithm Lead
+
+`Mar 2021 – Jul 2021`
+
+- Designed differential-ratio-sum deviation algorithm based on 4-channel electromagnetic sensor signals for track feature extraction, enabling auto-recognition of straight/normal/curved track segments.
+- Developed segmented PID control strategy with automatic parameter switching for 6 track states, supporting 4 parameter schemes via DIP switch.
+- Integrated 10ms-period control loop (PWM servo + dual-motor drive + ADC sampling), speed control error <5%.
+
+### Three-Phase AC-DC Conversion System (National Electronics Design Contest) — Control Program Lead
+
+`Nov 2021`
+
+- Implemented dual-loop PID control (voltage outer loop + current inner loop), stabilizing output at 36V ±0.1V.
+- Tuned parameters to meet load regulation <0.3%, voltage regulation ≤0.3%. System efficiency ≥85%.
+
+---
+
+## Work Experience
+
+### Changsha Kadunhaiker Instruments Co., Ltd. — Embedded Software Developer
+
+`Sep 2023 – Mar 2024`
+
+- Developed fully automatic kinematic viscosity determinator: STM32-based PID temperature control (±0.02℃), photosensitive signal processing (external interrupt + timer, accuracy ±0.01s), data fitting algorithm (range 0.5–3000 mm²/s, accuracy ≤1%), cleaning sequence control (GPIO-driven air pump/solenoid valve), Flash data storage (1000 test records), LCD interaction (UART), meeting ASTM D445 standard.
+- Participated in testing grease densitometer, automatic folding tube viscometer, and 10 other petroleum product testing instruments.

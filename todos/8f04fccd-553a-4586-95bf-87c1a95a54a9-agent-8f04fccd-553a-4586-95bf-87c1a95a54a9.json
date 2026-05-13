@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Extract 16 emails from PDF",
+    "status": "completed",
+    "activeForm": "Extracting 16 emails from PDF"
+  },
+  {
+    "content": "Create 16 markdown files using template format",
+    "status": "in_progress",
+    "activeForm": "Creating 16 markdown files using template format"
+  },
+  {
+    "content": "Verify all files created correctly",
+    "status": "pending",
+    "activeForm": "Verifying all files created correctly"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "content": "创建文件夹结构",
+    "status": "completed",
+    "activeForm": "创建文件夹结构"
+  },
+  {
+    "content": "移动 MP4 视频文件",
+    "status": "completed",
+    "activeForm": "移动 MP4 视频文件"
+  },
+  {
+    "content": "移动 PDF 文件",
+    "status": "completed",
+    "activeForm": "移动 PDF 文件"
+  },
+  {
+    "content": "移动 EPUB 电子书",
+    "status": "completed",
+    "activeForm": "移动 EPUB 电子书"
+  },
+  {
+    "content": "移动 MD5 校验文件",
+    "status": "in_progress",
+    "activeForm": "移动 MD5 校验文件"
+  }
+]

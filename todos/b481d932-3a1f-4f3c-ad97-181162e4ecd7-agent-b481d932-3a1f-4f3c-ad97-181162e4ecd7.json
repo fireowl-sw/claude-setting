@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Update bar chart with correct ICE emission range (167-224 g CO₂/km)",
+    "status": "completed",
+    "activeForm": "Bar chart updated with correct ICE data"
+  },
+  {
+    "content": "Add separate 224 g/km bar for ICE maximum emissions",
+    "status": "in_progress",
+    "activeForm": "Adding 224 g/km bar for ICE maximum emissions"
+  }
+]

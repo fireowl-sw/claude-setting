@@ -1,0 +1,22 @@
+[
+  {
+    "content": "测试程序是否正常运行",
+    "status": "in_progress",
+    "activeForm": "测试程序运行"
+  },
+  {
+    "content": "重新创建缺失的文件并添加完整注释",
+    "status": "in_progress",
+    "activeForm": "重新创建文件"
+  },
+  {
+    "content": "创建测试数据和验证脚本",
+    "status": "pending",
+    "activeForm": "创建测试脚本"
+  },
+  {
+    "content": "生成最终的项目文档",
+    "status": "pending",
+    "activeForm": "生成项目文档"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "content": "分析文档结构,识别所有独立通知",
+    "status": "completed",
+    "activeForm": "分析文档结构,识别所有独立通知"
+  },
+  {
+    "content": "创建通知存储文件夹",
+    "status": "completed",
+    "activeForm": "创建通知存储文件夹"
+  },
+  {
+    "content": "为每个通知创建独立的Markdown文件",
+    "status": "in_progress",
+    "activeForm": "为每个通知创建独立的Markdown文件"
+  },
+  {
+    "content": "添加索引文件汇总所有通知",
+    "status": "pending",
+    "activeForm": "添加索引文件汇总所有通知"
+  },
+  {
+    "content": "清理原始未命名文档",
+    "status": "pending",
+    "activeForm": "清理原始未命名文档"
+  }
+]

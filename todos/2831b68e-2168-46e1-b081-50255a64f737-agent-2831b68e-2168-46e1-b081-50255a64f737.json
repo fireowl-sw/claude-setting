@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Initialize Remotion project in current directory",
+    "status": "in_progress",
+    "activeForm": "Initializing Remotion project"
+  },
+  {
+    "content": "Create animation scenes for VSCode Claude Code installation tutorial",
+    "status": "pending",
+    "activeForm": "Creating animation scenes"
+  },
+  {
+    "content": "Add visual elements and text overlays",
+    "status": "pending",
+    "activeForm": "Adding visual elements"
+  },
+  {
+    "content": "Test and preview the animation",
+    "status": "pending",
+    "activeForm": "Testing animation"
+  }
+]

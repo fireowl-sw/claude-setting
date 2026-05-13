@@ -1,0 +1,82 @@
+# EE520 Exam Conclusion
+[[Week2 2026-04-18 11.21.11.mp4]] | [[5-02-c Intro to Motion Systems.pdf]]
+
+## Q1（5-02-c）：给定实际案例
+
+### 1. 设计 Motion Profile（motion mode + switching conditions）
+
+解题思路：分析案例动作流程，如 2025 年自动插针机 → 高速下降 → 低速搜寻接触点 → 恒力插针 → 高速上升
+
+**六种 Motion Mode：**
+
+| Mode | 典型应用 |
+|------|---------|
+| Velocity tracking | 风扇、牵引运输、泵、硬盘、磁带 |
+| Point-to-point | Pick & place、硬盘臂、起重机 |
+| Trajectory path tracking | CNC 车床、绘图仪、飞机导航 |
+| Force and tension control | 测试负载、拉力系统、金属板卷曲、机器人抓取 |
+| Compliance control | 机器人混合力-运动控制、测试设备 |
+| Vibration damping | 汽车主动悬架 |
+
+**以插针机为例的模式切换：**
+- Vmax → Velocity tracking mode
+- Vmax → Vlow → Trajectory path tracking mode
+- Vlow → 恒速搜寻 / 恒力
+- Stop
+- 返回（Vlow → Vmax）→ Trajectory path tracking
+- 定位 → Point-to-point motion
+
+### 2. 画 Block Diagram，说明各 Block 功能
+
+需掌握六种模式的方框图。注意轴数，额外加 Motion planner 和 Trajectory generator（几轴输出几轴）。
+
+| Block | 功能 |
+|-------|------|
+| Motion planner | 计算最优路径 |
+| Trajectory generator | 生成实际路径坐标 |
+| Controller | 控制机械按指令运动 |
+| Power electronics | 为电机提供电力 |
+| Motion actuators | 产生实际力/扭矩 |
+| Feedback sensors | 监测实际运动状态 |
+
+### 3. 画 Flow Chart 解释动作流程
+
+### 4. 列出/设计 Sensor，解释反馈机制
+
+---
+
+## Q2（5-04-b）：Motion Sensing
+[[5-04-b Motion Sensing.pdf]]
+**光学旋转编码器（三类）：**
+optical rotary encodersoptical rotary encoders✅
+- **脉冲发生器**：玻璃板图案、输出信号、功能、应用
+- **增量编码器**：同上
+- **绝对编码器**：同上
+
+**线性光学尺（Linear Optical Scale）：**
+✅
+- 画高精度光学装置图
+- 解释位置头为何需 5 个传感器（光电二极管）才能获取可靠位置信息
+- 横截面关键部件：准直透镜（Collimator lens）、网格刻度（Grid scale）、索引刻度（Index scale）
+
+**磁式线性刻度（Magnetic Linear Scale）：**
+✅
+- 画检测电路框图，解释每个读数头为何需两个线圈
+- 构造与工作原理，零速度下如何检测信号输出
+- 双通道正弦余弦波形 → 如何转换为绝对位置和速度信息
+
+**同步器（Synchro）vs 解析器（Resolver）：**
+✅
+- 结构和操作原理的区别
+- 同步器更贵但性能更好的原因
+
+---
+
+## Q3：Motion Actuators
+
+**电机比较（高速加减速 + 高精度）：**
+- 直流电刷电机、交流无刷同步电机、感应电机的优缺点
+
+**步进电机关键概念：**
+- 最小启动/停止步进率
+- 步进间振动（共振区）

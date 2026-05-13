@@ -1,0 +1,66 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/fireowl/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-05-11T10:46:25.271Z"
+  },
+  "claude-code-plugins": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-code"
+    },
+    "installLocation": "/Users/fireowl/.claude/plugins/marketplaces/claude-code-plugins",
+    "lastUpdated": "2026-01-18T03:26:02.361Z"
+  },
+  "everything-claude-code": {
+    "source": {
+      "source": "github",
+      "repo": "affaan-m/everything-claude-code"
+    },
+    "installLocation": "/Users/fireowl/.claude/plugins/marketplaces/everything-claude-code",
+    "lastUpdated": "2026-01-25T07:01:10.904Z"
+  },
+  "axton-obsidian-visual-skills": {
+    "source": {
+      "source": "github",
+      "repo": "axtonliu/axton-obsidian-visual-skills"
+    },
+    "installLocation": "/Users/fireowl/.claude/plugins/marketplaces/axton-obsidian-visual-skills",
+    "lastUpdated": "2026-01-25T07:01:11.890Z"
+  },
+  "zai-coding-plugins": {
+    "source": {
+      "source": "directory",
+      "path": "/Users/fireowl/.npm/_npx/2f024689b4d0d3b0/node_modules/@z_ai/coding-helper/zai-coding-plugins"
+    },
+    "installLocation": "/Users/fireowl/.npm/_npx/2f024689b4d0d3b0/node_modules/@z_ai/coding-helper/zai-coding-plugins",
+    "lastUpdated": "2026-03-06T08:46:54.402Z"
+  },
+  "webnovel-writer-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "lingfengQAQ/webnovel-writer"
+    },
+    "installLocation": "/Users/fireowl/.claude/plugins/marketplaces/webnovel-writer-marketplace",
+    "lastUpdated": "2026-03-15T15:19:30.668Z"
+  },
+  "claude-hud": {
+    "source": {
+      "source": "github",
+      "repo": "jarrodwatts/claude-hud"
+    },
+    "installLocation": "/Users/fireowl/.claude/plugins/marketplaces/claude-hud",
+    "lastUpdated": "2026-03-19T15:08:17.592Z"
+  },
+  "anthropic-agent-skills": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/anthropics/skills.git"
+    },
+    "installLocation": "/Users/fireowl/.claude/plugins/marketplaces/anthropic-agent-skills",
+    "lastUpdated": "2026-04-18T09:15:13.607Z"
+  }
+}

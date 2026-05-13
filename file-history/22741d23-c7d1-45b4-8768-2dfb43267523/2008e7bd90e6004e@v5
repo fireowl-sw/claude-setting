@@ -1,0 +1,369 @@
+## 考试形式
+
+> [!summary] 概览
+> - **题目数量**：7 题（Q1 – Q7）
+> - **分值分布**：6 题 × 15 分 + 1 题 × 10 分 = **100 分**
+> - **建议用时**：1.5 小时
+
+### 📝 答题要求
+
+- **No long essay** — 不写长篇大论
+- 简洁直接，不要写多余无关的话
+- 用**下横线**标记关键答案
+- 善用**要点列表**、**图示**、**流程图**作答
+
+### 📚 备考建议
+
+1. 熟悉打印的 **A4 纸**内容
+2. 浏览过往的 Tutorial 练习与 Past Paper
+
+---
+
+## 5-02-c Intro to Motion Systems
+
+[[5-02-c Intro to Motion Systems.pdf]]
+
+[[Week2 2026-04-18 11.21.11.mp4]]
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=48:01.25|48:01]]
+> Begin
+
+### 1 What is an Intelligent Motion System?
+
+> [!screenshot] [[Week11 2026-04-11 18.50.mp4#t=48:28.48|48:28]]
+> Applications Examples 没听太懂考什么，建议找题目和过去视频理解
+> If I give you a two leg, then you probaly have to answer
+> I think there are so many number of access and then the accuracy and then what are the intelligent function
+> the next I think is on the balancing
+
+
+### 2 Typical Structure of an Intelligent Motion System
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=48:48.48|48:48]]
+> 因为这一页是你第一个接触的智能运动的信息
+> 非常重要
+
+### 5 Requirements, structures, characteristics and applications of different operating modes
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=49:18.77|49:18]]
+> 非常重要
+
+ Velocity tracking system
+ Point-to-point motion system 
+ Trajectory path tracking system 
+ Force and tension control 
+ Compliance control 
+ Vibration damping
+
+---
+
+## 5-04-b Motion Sensing
+
+[[5-04-b Motion Sensing.pdf]]
+
+### 2 Magnetic Type Rotary Position Sensors
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=50:18.34|50:18]]
+> 最重要的是前两种 synchro and resolver, 其他的不重要。
+> 需要知道他们的structure，
+> which has a better performance, why
+> which is more expensive
+> 他们非常有用 especially in military applications
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=50:47.30|50:47]]
+> 特别是这个图需要知道
+> ![[5-04-b Motion Sensing.pdf#page=8&rect=162,611,616,999|5-04-b Motion Sensing, p.8|350]]
+
+### 3 Optical Type Rotary Position Sensors
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=51:00.08|51:00]]
+> 你需要知道
+> what is the house generator, incremental encoders, absolute encoders
+> and what are their output waveforms
+> 非常重要
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=51:37.49|51:37]]
+> ![[5-04-b Motion Sensing.pdf#page=11&rect=107,604,668,876|5-04-b Motion Sensing, p.11|350]]
+> This is push-pull method to change from the light source to your digital out put signal
+> 非常重要
+
+### 4 Linear Position Sensors
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=51:47.42|51:47]]
+> ![[5-04-b Motion Sensing.pdf#page=12&rect=98,425,674,989|5-04-b Motion Sensing, p.12|350]]
+> 你需要知道这个结构
+> what is a linear scale
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=51:56.61|51:56]]
+> ![[5-04-b Motion Sensing.pdf#page=14&rect=74,102,674,677|5-04-b Motion Sensing, p.14|350]]
+> 还需要知道这个结构
+> what is a magnetic linear scale
+> 你还需要知道
+> how come you need more than one coil?
+> You have the modulation frequency
+> How come you need a special modulaiton
+
+### 6 Force Sensors
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=52:24.95|52:24]]
+> ![[5-04-b Motion Sensing.pdf#page=17&rect=115,419,678,651|5-04-b Motion Sensing, p.17|350]]
+> 你需要知道这个图
+> This is essentially a bridge connection
+
+---
+
+## 5-06-a Motion Actuators
+
+[[5-06-a Motion Actuators.pdf]]
+
+### 2 Review on some types of Electric Motor
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=52:52.81|52:52]]
+> 你需要知道
+> what is the difference between the brush type motor, brushless type DC motor?
+> Why is it brushless DC is much better than brush DC?
+> And also, what is the synchronous motor, induction motor, etc
+> different kinds of motors is operating principle you need to know
+
+### 3 Single Phase Linear Actuators
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=53:37.98|53:37]]
+> If I ask for finger grippers, then you probably you can draw this out
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=53:48.55|53:48]]
+> ![[5-06-a Motion Actuators.pdf#page=14&rect=73,496,505,775|5-06-a Motion Actuators, p.14|350]]
+> ![[5-06-a Motion Actuators.pdf#page=16&rect=90,524,522,750|5-06-a Motion Actuators, p.16|350]]
+> 这个图非常重要 x2
+> 你需要比较这两个图，把两个图放一起
+> Then you compare, which is better, which has a better performance
+> 细节不重要
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=54:33.98|54:33]]
+> ![[5-06-a Motion Actuators.pdf#page=21&rect=74,116,560,330|5-06-a Motion Actuators, p.21|350]]
+> ![[5-06-a Motion Actuators.pdf#page=22&rect=82,322,463,760|5-06-a Motion Actuators, p.22|350]]
+> 这两个你需要知道
+
+---
+
+## 5-07-b Power Drives
+
+[[5-07-b Power Drives.pdf]]
+
+### 1 Four Quadrant Drive of DC Motor
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=54:46.77|54:46]]
+> ![[5-07-b Power Drives.pdf#page=2&rect=83,168,539,375|5-07-b Power Drives, p.2|350]]
+> ![[5-07-b Power Drives.pdf#page=3&rect=91,573,503,759|5-07-b Power Drives, p.3|350]]
+> The concept of four quadrant
+> 非常重要
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=54:56.50|54:56]]
+> ![[5-07-b Power Drives.pdf#page=5&rect=126,151,468,745|5-07-b Power Drives, p.5|350]]
+> 然后是这些四象限如何用来做控制
+> 重要
+
+### 4 Stepper Motor Drives
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=55:27.09|55:27]]
+> ![[5-07-b Power Drives.pdf#page=14&rect=85,122,419,516|5-07-b Power Drives, p.14|350]]
+> You need to know the different drive circuit
+> ![[5-07-b Power Drives.pdf#page=15&rect=83,572,501,773|5-07-b Power Drives, p.15|350]]
+> Speed up by using resistor
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=55:42.11|55:42]]
+> ![[5-07-b Power Drives.pdf#page=16&rect=85,538,460,773|5-07-b Power Drives, p.16|350]]
+> ![[5-07-b Power Drives.pdf#page=17&rect=82,513,525,770|5-07-b Power Drives, p.17|350]]
+> 经典的 dual voltage drive 和 PWMdrive
+> 非常重要
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=55:53.85|55:53]]
+> ![[5-07-b Power Drives.pdf#page=18&rect=85,221,545,779|5-07-b Power Drives, p.18|350]]
+> How do you do a point to point at the fast speed? you need to follow this diagram
+> The torque and the resonant problem
+> 非常重要
+
+---
+
+## 5-08-a Motion Control Platform
+
+[[5-08-a Motion Control Platform.pdf]]
+
+### 2 Implementation of Real Time Control
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=56:30.66|56:30]]
+> ![[5-08-a Motion Control Platform.pdf#page=6&rect=84,372,470,591|5-08-a Motion Control Platform, p.6|350]]
+> ![[5-08-a Motion Control Platform.pdf#page=7&rect=87,166,507,770|5-08-a Motion Control Platform, p.7|350]]
+> solution 1,2,3 advantages, disadvantages
+> 非常重要
+
+### 3 Communication Networks and Protocols
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=56:51.60|56:51]]
+> SERCOS 非常重要，实际上我们在特斯拉上看到过这个，so that's why it is important
+
+### 6 Optical Encoder Interface
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=57:14.38|57:14]]
+> ![[5-08-a Motion Control Platform.pdf#page=13&rect=79,273,521,477|5-08-a Motion Control Platform, p.13|350]]
+> ![[5-08-a Motion Control Platform.pdf#page=14&rect=77,44,528,458|5-08-a Motion Control Platform, p.14|350]]
+> You must know the structure diagram of what is quadrature decoding
+> and also what is the interpolation unit
+> 非常重要
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=57:48.20|57:48]]
+> ![[5-08-a Motion Control Platform.pdf#page=17&rect=70,126,526,779|5-08-a Motion Control Platform, p.17|350]]
+> The method onward
+> 非常重要
+
+---
+
+## 5-09-a Digital PID Controller
+
+[[5-09-a Digital PID Controller.pdf]]
+
+### 1 The Digital Control Platform
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=58:16.64|58:16]]
+> ![[5-09-a Digital PID Controller.pdf#page=6&rect=78,500,527,775|5-09-a Digital PID Controller, p.6|350]]
+> 你需要知道这是什么
+> 非常重要
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=58:53.47|58:53]]
+> ![[5-09-a Digital PID Controller.pdf#page=8&rect=70,99,528,504|5-09-a Digital PID Controller, p.8|350]]
+> What is digital PID
+> What happens if you over-tune this under-tune this
+> and then what is the secrets Nichols tuning
+> 必须知道
+
+### 4 Variations of PID Control
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=59:06.55|59:06]]
+> ![[5-09-a Digital PID Controller.pdf#page=10&rect=77,195,522,771|5-09-a Digital PID Controller, p.10|350]]
+> auto tuning is one of the most popular question in the exam paper
+> 应该知道
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=59:16.58|59:16]]
+> ![[5-09-a Digital PID Controller.pdf#page=11&rect=75,157,517,770|5-09-a Digital PID Controller, p.11|350]]
+> 这三件事非常重要
+> If I ask I want is the Integrator Anti-Windup. 把这部分内容放在一起就好了
+
+### 5 Implementing PID in DC motor servo system
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=59:35.56|59:35]]
+> ![[5-09-a Digital PID Controller.pdf#page=12&rect=80,89,540,774|5-09-a Digital PID Controller, p.12|350]]
+> How come in a free loop cascade control you do not use the D control you only use PI control
+> 你需要绘制整个图 free loop cascade control and explain it
+> T control is not necessary
+> 非常重要
+
+### 6 Control Terminologies
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=59:56.75|59:56]]
+> 你必须学习这个定义，不学习就把它写在纸上
+
+---
+
+## 5-10-a Robust Control Issues
+
+[[5-10-a Robust Control Issues.pdf]]
+
+### 1 Introduction
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:00:21.93|01:00:21]]
+> ![[5-10-a Robust Control Issues.pdf#page=2&rect=86,37,466,266|5-10-a Robust Control Issues, p.2|350]]
+> What is robust control
+> This figure which is highly robust which is less robust
+> 重要
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:00:30.23|01:00:30]]
+> ![[5-10-a Robust Control Issues.pdf#page=3&rect=74,71,525,449|5-10-a Robust Control Issues, p.3|350]]
+> What type of feed-forward compensation signal
+> 重要
+
+### 3 Estimate System Parameters
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:00:38.98|01:00:38]]
+> ![[5-10-a Robust Control Issues.pdf#page=4&rect=81,102,544,359|5-10-a Robust Control Issues, p.4|350]]
+> You need to understand what is the observation estimate principle
+
+### 2 Adaptive Control
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:00:58.47|01:00:58]]
+> ![[5-10-a Robust Control Issues.pdf#page=8&rect=94,163,499,516|5-10-a Robust Control Issues, p.8|350]]
+> whenever there's a question on adaptive control 你就需要画这两个图
+> 非常重要
+
+### 5 Steps in Control System Design
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:01:17.81|01:01:17]]
+> ![[5-10-a Robust Control Issues.pdf#page=10&rect=71,289,522,776|5-10-a Robust Control Issues, p.10|350|350]]
+> 你需要知道
+
+---
+
+## 5-11-a Multi-Axes Issues
+
+[[5-11-a Multi-Axes Issues.pdf]]
+
+### 3 Robot Tasks Classification
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:01:46.17|01:01:46]]
+> ![[5-11-a Multi-Axes Issues.pdf#page=6&rect=144,89,461,384|5-11-a Multi-Axes Issues, p.6|350]]
+> what is class 1 2 3 4
+> 这会在你的考试出现
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:02:00.77|01:02:00]]
+> ![[5-11-a Multi-Axes Issues.pdf#page=9&rect=140,88,451,522|5-11-a Multi-Axes Issues, p.9|350]]
+> How will we be able to measure this by using this matrix?
+
+### 5 Work Method Analysis
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:02:07.37|01:02:07]]
+> ![[5-11-a Multi-Axes Issues.pdf#page=11&rect=137,96,476,457|5-11-a Multi-Axes Issues, p.11|350]]
+> How can you translate the work from two hands to one single arm
+
+### 6 Robot Arm Kinematics
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:02:26.60|01:02:26]]
+> ![[5-11-a Multi-Axes Issues.pdf#page=13&rect=85,194,508,351|5-11-a Multi-Axes Issues, p.13|350]]
+> 重要的是 you know the definition
+> what is kinematics dynamics and control
+> 如果我问你 Define what is kinematics then you just write these things out
+
+### 8 Controller Design for Robots
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:02:44.31|01:02:44]]
+> multi-axis robotics hardware design
+> 跟着Tutorial 7 做
+
+---
+
+## 5-13-a EMI-EMC in Motion Systems
+
+[[5-13-a EMI-EMC in Motion Systems.pdf]]
+
+### 1 The EMI/EMC Problem
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:03:20.44|01:03:20]]
+> ![[5-13-a EMI-EMC in Motion Systems.pdf#page=2&rect=81,153,525,431|5-13-a EMI-EMC in Motion Systems, p.2|350]]
+> you need to know the definition of EMI EMC
+> what is E field, H field
+> what is near field, far field
+
+### 2 The Emission Standards
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:03:28.73|01:03:28]]
+> ![[5-13-a EMI-EMC in Motion Systems.pdf#page=5&rect=150,501,452,751|5-13-a EMI-EMC in Motion Systems, p.5|350]]
+> How to measure the EMI EMC that you draw this diagram
+
+### 3 Digital Signal Interference
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:03:32.76|01:03:32]]
+> ![[5-13-a EMI-EMC in Motion Systems.pdf#page=6&rect=121,72,470,463|5-13-a EMI-EMC in Motion Systems, p.6|350]]
+> what is a good/bad PCB layout
+
+### 5 Cables and Coupling Problems
+
+> [!note] 📍 [[Week11 2026-04-11 18.50.mp4#t=1:04:06.75|01:04:06]]
+> ![[5-13-a EMI-EMC in Motion Systems.pdf#page=16&rect=81,215,465,492|5-13-a EMI-EMC in Motion Systems, p.16|350]]
+> how to produce interference
+> at least you know these are the three way to produce interference

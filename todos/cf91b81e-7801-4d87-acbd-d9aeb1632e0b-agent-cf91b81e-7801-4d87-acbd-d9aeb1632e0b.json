@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Add loading spinner animation",
+    "status": "completed",
+    "activeForm": "Adding loading spinner animation"
+  },
+  {
+    "content": "Enhance password strength indicator",
+    "status": "completed",
+    "activeForm": "Enhancing password strength indicator"
+  },
+  {
+    "content": "Add dark mode toggle",
+    "status": "completed",
+    "activeForm": "Adding dark mode toggle"
+  },
+  {
+    "content": "Improve accessibility with ARIA labels",
+    "status": "completed",
+    "activeForm": "Improving accessibility"
+  },
+  {
+    "content": "Add subtle micro-interactions",
+    "status": "in_progress",
+    "activeForm": "Adding micro-interactions"
+  }
+]

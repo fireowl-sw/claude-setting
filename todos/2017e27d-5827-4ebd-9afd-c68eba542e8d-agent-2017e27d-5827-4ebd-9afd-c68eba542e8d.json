@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Check project structure and determine how to run it",
+    "status": "in_progress",
+    "activeForm": "Checking project structure"
+  },
+  {
+    "content": "Test if the project runs normally",
+    "status": "pending",
+    "activeForm": "Testing project"
+  },
+  {
+    "content": "Check if Markdown-Note-taking repository exists on GitHub",
+    "status": "pending",
+    "activeForm": "Checking GitHub repository"
+  },
+  {
+    "content": "Create repository if it doesn't exist",
+    "status": "pending",
+    "activeForm": "Creating repository"
+  },
+  {
+    "content": "Push files to GitHub repository",
+    "status": "pending",
+    "activeForm": "Pushing files to GitHub"
+  }
+]

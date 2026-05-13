@@ -1,0 +1,52 @@
+[
+  {
+    "content": "分析项目需求和技术选型",
+    "status": "completed",
+    "activeForm": "分析项目需求和技术选型"
+  },
+  {
+    "content": "创建项目基础结构和文件",
+    "status": "completed",
+    "activeForm": "创建项目基础结构和文件"
+  },
+  {
+    "content": "实现HTML基础结构",
+    "status": "completed",
+    "activeForm": "实现HTML基础结构"
+  },
+  {
+    "content": "创建CSS样式系统",
+    "status": "completed",
+    "activeForm": "创建CSS样式系统"
+  },
+  {
+    "content": "实现核心JavaScript功能",
+    "status": "completed",
+    "activeForm": "实现核心JavaScript功能"
+  },
+  {
+    "content": "添加思维导图交互功能",
+    "status": "completed",
+    "activeForm": "添加思维导图交互功能"
+  },
+  {
+    "content": "实现拖拽和缩放功能",
+    "status": "completed",
+    "activeForm": "实现拖拽和缩放功能"
+  },
+  {
+    "content": "添加导出和保存功能",
+    "status": "completed",
+    "activeForm": "添加导出和保存功能"
+  },
+  {
+    "content": "添加html2canvas库支持导出功能",
+    "status": "in_progress",
+    "activeForm": "添加html2canvas库支持导出功能"
+  },
+  {
+    "content": "创建README文档",
+    "status": "pending",
+    "activeForm": "创建README文档"
+  }
+]

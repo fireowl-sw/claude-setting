@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Create wechatInlineStyles.ts with inline style configuration",
+    "status": "in_progress",
+    "activeForm": "Creating wechatInlineStyles.ts with inline style configuration"
+  },
+  {
+    "content": "Create styleFilter.ts utility to filter unsupported CSS",
+    "status": "pending",
+    "activeForm": "Creating styleFilter.ts utility to filter unsupported CSS"
+  },
+  {
+    "content": "Refactor callout renderer to remove SVG and use inline styles",
+    "status": "pending",
+    "activeForm": "Refactoring callout renderer to remove SVG and use inline styles"
+  },
+  {
+    "content": "Update solveHTML() method to remove IDs and filter CSS",
+    "status": "pending",
+    "activeForm": "Updating solveHTML() method to remove IDs and filter CSS"
+  },
+  {
+    "content": "Test the modified HTML output in WeChat",
+    "status": "pending",
+    "activeForm": "Testing the modified HTML output in WeChat"
+  }
+]

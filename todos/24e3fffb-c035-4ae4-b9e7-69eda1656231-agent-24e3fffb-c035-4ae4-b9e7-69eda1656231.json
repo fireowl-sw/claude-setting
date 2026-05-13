@@ -1,0 +1,27 @@
+[
+  {
+    "content": "完成EEE522分组",
+    "status": "completed",
+    "activeForm": "完成EEE522分组"
+  },
+  {
+    "content": "准备EEE522 Part1展示（2月6日，仅剩11天）",
+    "status": "in_progress",
+    "activeForm": "准备EEE522 Part1展示"
+  },
+  {
+    "content": "确定EE520个人报告选题",
+    "status": "pending",
+    "activeForm": "确定EE520报告选题"
+  },
+  {
+    "content": "更新简历并投递实习申请",
+    "status": "pending",
+    "activeForm": "更新简历并投递实习"
+  },
+  {
+    "content": "复习课程内容（为开卷测试准备笔记）",
+    "status": "pending",
+    "activeForm": "复习课程内容"
+  }
+]

@@ -1,0 +1,149 @@
+---
+type: master-resume
+lang: en
+created: 2026-04-19
+updated: 2026-04-19
+status: active
+---
+
+# Master Resume (English)
+
+> 💡 This is your comprehensive resume master copy. Tailor it for each application by removing irrelevant sections — never add new content during tailoring.
+> Use the **STAR method** for each bullet: Situation → Task → Action → **Result (quantified)**.
+
+---
+
+## Contact Information
+
+| Field | Details |
+|-------|---------|
+| Name |  |
+| Phone |  |
+| Email |  |
+| Location |  |
+| LinkedIn |  |
+| GitHub |  |
+| Portfolio |  |
+
+---
+
+## Professional Summary
+
+> 3-5 sentences highlighting your core competencies and career achievements. Lead with data and impact.
+
+<!-- Example:
+Results-driven Full-Stack Engineer with X years of experience in [domain].
+Led [project] at [company], improving [metric] by X%. Passionate about
+[technical interests] with a proven track record of shipping products from 0 to 1.
+-->
+
+---
+
+## Work Experience
+
+### [Company Name] — [Job Title]
+
+`MMM YYYY - MMM YYYY | City, Country`
+
+**About the Company**: One-sentence description of company scale/business.
+
+**Key Responsibilities**:
+-
+
+**Key Achievements**:
+- **[Project/Achievement]**: S → T → A → **R: Improved metric by X%**
+- **[Project/Achievement]**: S → T → A → **R: Saved X hours / Reduced costs by X%**
+- **[Project/Achievement]**: S → T → A → **R: Served X million users / Revenue grew X%**
+
+**Tech Stack**: `Tech1` `Tech2` `Tech3`
+
+---
+
+<!-- Duplicate the block above for additional work experience -->
+
+---
+
+## Projects
+
+### [Project Name]
+
+`MMM YYYY - MMM YYYY`
+
+- **Role**:
+- **Summary**: One-sentence description of the project goal and scale
+- **Tech Stack**: `Tech1` `Tech2`
+- **Highlights**:
+  -
+  -
+
+---
+
+<!-- Duplicate the block above for additional projects -->
+
+---
+
+## Education
+
+### [University Name] — [Degree] — [Major]
+
+`MMM YYYY - MMM YYYY`
+
+- GPA / Rank:
+- Relevant Coursework:
+- Honors / Scholarships:
+
+---
+
+## Technical Skills
+
+### Programming Languages
+`Language1` `Language2` `Language3`
+
+### Frameworks & Libraries
+`Framework1` `Framework2` `Framework3`
+
+### Tools & Platforms
+`Tool1` `Tool2` `Tool3`
+
+### Domain Expertise
+- [Domain 1]:
+- [Domain 2]:
+- [Domain 3]:
+
+---
+
+## Certifications
+
+| Certification | Issuer | Date |
+|---------------|--------|------|
+|  |  |  |
+
+---
+
+## Languages
+
+| Language | Proficiency |
+|----------|-------------|
+| Chinese | Native |
+| English |  |
+
+---
+
+## Honors & Awards
+
+| Award | Issuer | Date |
+|-------|--------|------|
+|  |  |  |
+
+---
+
+## Additional
+
+### Talks & Presentations
+-
+
+### Open Source Contributions
+-
+
+### Volunteer Work
+-

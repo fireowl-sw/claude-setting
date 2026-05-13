@@ -1,0 +1,12 @@
+[
+  {
+    "content": "创建小说项目主文件夹和子文件夹结构",
+    "status": "completed",
+    "activeForm": "创建文件夹结构"
+  },
+  {
+    "content": "使用 json-canvas skill 创建 00_总纲.canvas 模板",
+    "status": "in_progress",
+    "activeForm": "创建总纲 Canvas 模板"
+  }
+]

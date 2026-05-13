@@ -1,0 +1,44 @@
+# EE520 Exam Conclusion
+[[Week2 2026-04-18 11.21.11.mp4]] | [[5-02-c Intro to Motion Systems.pdf]]
+
+## Q1（5-02-c）：给定实际案例
+
+### 1. 设计 Motion Profile（motion mode + switching conditions）
+
+解题思路：分析案例动作流程，如 2025 年自动插针机 → 高速下降 → 低速搜寻接触点 → 恒力插针 → 高速上升
+
+**六种 Motion Mode：**
+
+| Mode | 典型应用 |
+|------|---------|
+| Velocity tracking | 风扇、牵引运输、泵、硬盘、磁带 |
+| Point-to-point | Pick & place、硬盘臂、起重机 |
+| Trajectory path tracking | CNC 车床、绘图仪、飞机导航 |
+| Force and tension control | 测试负载、拉力系统、金属板卷曲、机器人抓取 |
+| Compliance control | 机器人混合力-运动控制、测试设备 |
+| Vibration damping | 汽车主动悬架 |
+
+**以插针机为例的模式切换：**
+- Vmax → Velocity tracking mode
+- Vmax → Vlow → Trajectory path tracking mode
+- Vlow → 恒速搜寻 / 恒力
+- Stop
+- 返回（Vlow → Vmax）→ Trajectory path tracking
+- 定位 → Point-to-point motion
+
+### 2. 画 Block Diagram，说明各 Block 功能
+
+需掌握六种模式的方框图。注意轴数，额外加 Motion planner 和 Trajectory generator（几轴输出几轴）。
+
+| Block | 功能 |
+|-------|------|
+| Motion planner | 计算最优路径 |
+| Trajectory generator | 生成实际路径坐标 |
+| Controller | 控制机械按指令运动 |
+| Power electronics | 为电机提供电力 |
+| Motion actuators | 产生实际力/扭矩 |
+| Feedback sensors | 监测实际运动状态 |
+
+### 3. 画 Flow Chart 解释动作流程
+
+### 4. 列出/设计 Sensor，解释反馈机制
