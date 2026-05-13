@@ -31,7 +31,8 @@ temp/
 stats-cache.json
 .last-cleanup
 
-# ===== Node (plugins/marketplace) =====
+# ===== Plugins =====
+plugins/cache/
 node_modules/
 package-lock.json
 
@@ -45,3 +46,6 @@ uv.lock
 
 # ===== OS =====
 .DS_Store
+plugins/cache/axton-obsidian-visual-skills/obsidian-visual-skills/f934f80c11fc/.orphaned_at
+plugins/cache/axton-obsidian-visual-skills/obsidian-visual-skills/f934f80c11fc/.orphaned_at
+plugins/cache/axton-obsidian-visual-skills/obsidian-visual-skills/f934f80c11fc/.orphaned_at
